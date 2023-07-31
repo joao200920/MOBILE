@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 <link rel="stylesheet" href="reset.css">
@@ -13,13 +14,14 @@
 <link rel="stylesheet" href="style.css">
 <title>AluraBooks</title>
 </head>
+
 <Body>
-<header class="cabeçalho">
-<div class="container">
-<input type="checkbox" id="menu" class="container__botao"> 
-<label for="menu">
-<span class="cabeçalho__menu-hunburger container__imagem"></span>
-</label>
+    <header class="cabeçalho">
+        <div class="container">
+            <input type="checkbox" id="menu" class="container__botao"> 
+            <label for="menu">
+            <span class="cabeçalho__menu-hunburger container__imagem"></span>
+            </label>
 
 <ul class="lista-menu">
 <li class="lista-menu__titulo">Categoria</li>
@@ -58,16 +60,17 @@
 <input type="search" class="banner__pesquisa" placeholder="Qual será sua próxima leitura?">
 </section>
 <section class="carrossel">
-<ch2 class="carrossel__titulo">Novos Lançamentos</h2>
+<h2 class="carrossel__titulo">Novos Lançamentos</h2>
 <div class="swiper">
 <div class="swiper-pagination"></div>
 <div class="swiper-wrapper">
-<div class="swiper-slide"><img src="img/ApacheKafka.svg.png" alt="Livro sobre Apache Kafka"></div>
-<div class="swiper-slide"><img src="img/Liderança.svg.png" alt="Livro sobre liderança"></div> 
-<div class="swiper-slide"><img src="img/Javascript.svg.png" alt="Livro sobre Javascript"></div>
-<div class="swiper-slide"><img src="img/Guia Front-end.svg.png" alt="Livro sobre Front-end"></div>
-<div class="swiper-slide"><img src="img/Portugol.svg.png" alt="Livro sobre Portugo1"></div>
-<div class="swiper-slide"><img src="img/Acessibilidade.svg.png" alt="Livro sobre Acessibilidade"></div>
+
+<div class="swiper-slide"><img src="img/ApacheKafka.svg" alt="Livro sobre Apache Kafka"></div>
+<div class="swiper-slide"><img src="img/Liderança.svg" alt="Livro sobre liderança"></div> 
+<div class="swiper-slide"><img src="img/Javascript.svg" alt="Livro sobre Javascript"></div>
+<div class="swiper-slide"><img src="img/Guia Front-end.svg" alt="Livro sobre Front-end"></div>
+<div class="swiper-slide"><img src="img/Portugol.svg" alt="Livro sobre Portugo1"></div>
+<div class="swiper-slide"><img src="img/Acessibilidade.svg" alt="Livro sobre Acessibilidade"></div>
 </div>
 
 <div class="swiper-button-prev"></div>
@@ -107,6 +110,57 @@ type: 'bullets',
         </ul>
         <a href="#" class="botões__ancora">saiba mais</a>
     </div>
+    <section class="carrossel">
+        <h2 class="carrossel__titulo">MAIS VENDIDOS</h2>
+        <div class="swiper">
+        <div class="swiper-pagination"></div>
+        <div class="swiper-wrapper">
+            
+        <div class="swiper-slide"><img src="img/ApacheKafka.svg" alt="Livro sobre Apache Kafka"></div>
+        <div class="swiper-slide"><img src="img/Liderança.svg" alt="Livro sobre liderança"></div> 
+        <div class="swiper-slide"><img src="img/Javascript.svg" alt="Livro sobre Javascript"></div>
+        <div class="swiper-slide"><img src="img/Guia Front-end.svg" alt="Livro sobre Front-end"></div>
+        <div class="swiper-slide"><img src="img/Portugol.svg" alt="Livro sobre Portugo1"></div>
+        <div class="swiper-slide"><img src="img/Acessibilidade.svg" alt="Livro sobre Acessibilidade"></div>
+        </div>
+        
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        </div>
+        
+        </section>
+        
+        <!-- Segundo link do carrossel -->
+        
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+        
+        <script>
+        
+        const swiper1 = new Swiper('.swiper', {
+        spaceBetween: 10,
+        slidesPerView: 3,
+        pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+        }});
+        </script>
+        
+        <div class="card">
+            <div class="card__descrição">
+                <div class="descrição">
+                    <img class="Estrelinhas" src="img/Estrelinhas.svg" class="descrição__texto">
+                    <h2 class="descrição__titulo-livro">Autora do mês</h2>
+                    <p class="descrição__texto">Construindo um aplicação integrada com a plataforma Google.</p>
+                </div>
+                <img src="Img/Juliana Agarikov.svg" class="descrição__imagem">
+            </div>
+            <div class="card__botões">
+                <ul class="botões">
+                    <li class="botões__item"><img src="Img/Favoritos.svg" alt="Favoritar"></li>
+                    <li class="botões__item"><img src="img/Compras.svg" alt="Adicionar ao carrinho de compras"></li>
+                </ul>
+                <a href="#" class="botões__ancora">saiba mais</a>
+            </div>
 </div>
 </body>
 </html>

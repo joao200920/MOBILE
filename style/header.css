@@ -30,21 +30,22 @@
     width: 60vw;
 }
 
-.container_botar:checked ~ .lista-menu{
+.container__botao:checked ~ .lista-menu{
     display: block;
 }
 
-.lista-menu_titulo, .lista-menu_item{
+.lista-menu__titulo, 
+.lista-menu__item{
     padding: 1em;
     background-color: var(--branco);
 }
 
-.lista-menu_titulo{
+.lista-menu__titulo{
     color: var(--laranja);
     font-weight: 700;
 }
 
-.lista-menu_link{
+.lista-menu__link{
     background: var(--azul-degrade);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -52,6 +53,6 @@
     text-transform: uppercase;
 }
 
-.container_botao{
+.container__botao{
     display: none;
 }
